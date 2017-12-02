@@ -1,0 +1,167 @@
+openapi: 3.0.0
+servers:
+  - url: 'https://beta.sciencebase.gov/vocab'
+info:
+  title: ScienceBase Vocab API
+  description: a collaborative scientific database enhancing scientific inquiry and acuity.
+  version: 2.86.1
+paths:
+  /categories:
+    get:
+      summary: All categories
+      description: >-
+        The categories endpoint, returns all terms by term, vocabulary, and
+        category.
+      parameters:
+        - name: q
+          in: query
+          description: Specified search term
+          required: false
+          schema:
+            type: string
+        - name: max
+          in: query
+          description: Number of results to display per page
+          required: false
+          schema:
+            type: integer
+        - name: offset
+          in: query
+          description: Number of items to skip before starting to collect result set
+          required: false
+          schema:
+            type: integer
+      tags:
+        - Categories
+      responses:
+        '200':
+          description: A list of categories
+          content:
+            application/json:
+              schema:
+                type: object
+            text/xml:
+              schema:
+                type: object
+            text/html:
+              schema:
+                type: object
+            application/atom+xml:
+              schema:
+                type: object
+        '404':
+          description: 'Term does not exist, or you do not have permissions to view it.'
+          content:
+            application/json:
+              schema:
+                type: object
+            text/xml:
+              schema:
+                type: object
+            text/html:
+              schema:
+                type: object
+            application/atom+xml:
+              schema:
+                type: object
+  /category/{id, name}:
+    get:
+      summary: Category by id or name
+      description: >-
+        The category by id or name endpoint returns a category for a given ID or
+        Name.
+      parameters:
+        - name: 'id, name'
+          in: path
+          description: ID or Name of folder
+          required: true
+          schema:
+            type: string
+      tags:
+        - Category
+      responses:
+        '200':
+          description: Category folder and subfolders
+          content:
+            application/json:
+              schema:
+                type: object
+            text/xml:
+              schema:
+                type: object
+            text/html:
+              schema:
+                type: object
+            application/atom+xml:
+              schema:
+                type: object
+        '404':
+          description: 'Folder does not exist, or you do not have permissions to view it.'
+          content:
+            application/json:
+              schema:
+                type: object
+            text/xml:
+              schema:
+                type: object
+            text/html:
+              schema:
+                type: object
+            application/atom+xml:
+              schema:
+                type: object
+  /category:
+    post:
+      summary: Adds a new subfolder
+      requestBody:
+        description: JSON object to create subfolder
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CategorySubfolder'
+      responses:
+        '201':
+          description: Created subfolder
+        '404':
+          description: Error creating folder
+          content:
+            application/json:
+              schema:
+                type: object
+      tags:
+        - Category
+    put:
+      summary: Update an existing subfolder
+      requestBody:
+        description: JSON object to update subfolder
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CategorySubfolder'
+      responses:
+        '201':
+          description: Updated subfolder
+        '404':
+          description: Error creating folder
+          content:
+            application/json:
+              schema:
+                type: object
+      tags:
+        - Category
+components:
+  schemas:
+    CategorySubfolder:
+      type: object
+      properties:
+        name:
+          type: string
+          example: Ducks
+        nodeType:
+          type: string
+          example: category
+        parentId:
+          type: string
+          example: 4f4e475be4b07f02db47de34

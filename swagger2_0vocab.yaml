@@ -1,0 +1,104 @@
+# this is an example of the Uber API
+# as a demonstration of an API spec in YAML
+swagger: '2.0'
+info:
+  title: ScienceBase Vocab API
+  description: a collaborative scientific database enhancing scientific inquiry and acuity.
+  version: "2.86.1"
+# the domain of the service
+host: beta.sciencebase.gov
+# array of all schemes that your API supports
+schemes:
+  - https
+# will be prefixed to all paths
+basePath: /vocab
+produces:
+  - application/json
+  - text/xml
+  - text/html
+  - application/atom+xml
+paths:
+  /categories:
+    get:
+      summary: All categories
+      description: The categories endpoint, returns all terms by term, vocabulary, and category.
+      parameters:
+        - name: q
+          in: query
+          description: Specified search term
+          required: false
+          type: string
+        - name: max
+          in: query
+          description: Number of results to display per page
+          required: false
+          type: integer
+        - name: offset
+          in: query
+          description: Number of items to skip before starting to collect result set
+          required: false
+          type: integer
+      tags:
+        - Categories
+      responses:
+        200:
+          description: A list of categories
+          schema: 
+            type: object
+        404:
+          description: Term does not exist, or you do not have permissions to view it.
+          schema:
+            type: object
+  /category/{id, name}:
+    get:
+      summary: Category by id or name
+      description: The category by id or name endpoint returns a category for a given ID or Name.
+      parameters:
+        - name: id, name
+          in: path
+          description: ID or Name of folder
+          required: true
+          type: string
+      tags:
+        - Category
+      responses:
+        200:
+          description: Category folder and subfolders
+          schema: 
+            type: object
+        404:
+          description: Folder does not exist, or you do not have permissions to view it.
+          schema:
+            type: object
+  /category:            
+    post:
+      summary: Creates a new vocabulary folder.
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          required: true
+          description: The JSON object information to create new folder
+          schema:
+            type: object
+            required:
+              - name
+              - parentId
+              - nodeType
+            properties:
+              name: 
+                type: string
+              parentId: 
+                type: string
+              nodeType: 
+                type: string
+      tags:
+      - Category
+      responses:
+        201:
+          description: Created
+        404:
+          description: Error creating folder
+          schema:
+            type: object

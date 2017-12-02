@@ -1,0 +1,42 @@
+openapi: 3.0.0
+servers:
+  - url: 'https://beta.sciencebase.gov/vocab'
+info:
+  title: ScienceBase Vocab API
+  description: a collaborative scientific database enhancing scientific inquiry and acuity.
+  version: 1.15.4
+paths:
+  /category:
+    post:
+      summary: Adds a new subfolder
+      requestBody:
+        description: JSON object to create subfolder
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CategorySubfolder'
+      responses:
+        '201':
+          description: Created subfolder
+        '404':
+          description: Error creating folder
+          content:
+            application/json:
+              schema:
+                type: object
+      tags:
+        - Category
+components:
+  schemas:
+    CategorySubfolder:
+      type: object
+      properties:
+        name:
+          type: string
+        nodeType:
+          type: string
+        parentId:
+          type: string
+        blah:
+          type: string
