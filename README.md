@@ -1,6 +1,9 @@
 # swaggers
 
-## Steps to generate yaml code:
-- Grab curl command from POST in SB
-- Plug curl command into Postman collection
-- Convert Postman collection into OpenAPI3.0 spec apitransformer https://apimatic.io/transformer
+## Steps to generate Swagger YAML files:
+- Grab curl command from POST in SB from devtools
+- Plug curl command into Postman, generate JSON formatted requests
+- Create collection of requests in Postman
+- Using apimatic.io/transformer, convert collection to OpenAPI Spec v.3.0 YAML
+- Generate swagger api docs from YAML files
+- Clean up generated YAML files
