@@ -1,5 +1,3 @@
-# swaggers
-
 ## Steps to generate Swagger YAML files:
 - Grab curl command from http request in SB from devtools
 - Plug curl command into Postman, generate JSON formatted requests
