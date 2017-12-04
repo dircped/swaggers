@@ -1,0 +1,1920 @@
+openapi: 3.0.0
+info:
+  title: ScienceBase Vocab API
+  description: 'TODO: Add Description'
+  version: '1.0'
+servers:
+- url: https://beta.sciencebase.gov/vocab
+  variables: {}
+paths:
+  /category:
+    get:
+      tags:
+      - Category
+      summary: /category
+      description: "Generated from a curl request: \ncurl 'https://beta.sciencebase.gov/vocab/category' -H 'Pragma: no-cache' -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: en-US,en;q=0.9' -H 'Upgrade-Insecure-Requests: 1' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8' -H 'Referer: https://my-beta.usgs.gov/josso/signon/login.do?josso_back_to=https%3A%2F%2Fbeta.sciencebase.gov%2Fvocab%2Fjosso_security_check' -H 'Cookie: JSESSIONID=4DC679F2C48DB416E94887EBAC2E76D3; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.1114365831.1511800293; _gat=1; myusgs.recent=1' -H 'Connection: keep-alive' -H 'Cache-Control: no-cache' --compressed"
+      operationId: /category
+      parameters:
+      - name: Pragma
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: no-cache
+        example: no-cache
+      - name: Accept-Encoding
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: gzip, deflate, br
+        example: gzip, deflate, br
+      - name: Accept-Language
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: en-US,en;q=0.9
+        example: en-US,en;q=0.9
+      - name: Upgrade-Insecure-Requests
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: 1
+        example: 1
+      - name: User-Agent
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+        example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+      - name: Accept
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+        example: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+      - name: Referer
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: https://my-beta.usgs.gov/josso/signon/login.do?josso_back_to=https%3A%2F%2Fbeta.sciencebase.gov%2Fvocab%2Fjosso_security_check
+        example: https://my-beta.usgs.gov/josso/signon/login.do?josso_back_to=https%3A%2F%2Fbeta.sciencebase.gov%2Fvocab%2Fjosso_security_check
+      - name: Cookie
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: JSESSIONID=4DC679F2C48DB416E94887EBAC2E76D3; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.1114365831.1511800293; _gat=1; myusgs.recent=1
+        example: JSESSIONID=4DC679F2C48DB416E94887EBAC2E76D3; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.1114365831.1511800293; _gat=1; myusgs.recent=1
+      - name: Connection
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: keep-alive
+        example: keep-alive
+      - name: Cache-Control
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: no-cache
+        example: no-cache
+      responses:
+        200:
+          description: ''
+      deprecated: false
+      security: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      tags:
+      - Category
+      summary: /category
+      description: asdf
+      operationId: /category1
+      parameters:
+      - name: Cookie
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: JSESSIONID=3487134AD47D9ABB1F5BF17595704268; myusgs.recent=1; _gat=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.1114365831.1511800293
+        example: JSESSIONID=3487134AD47D9ABB1F5BF17595704268; myusgs.recent=1; _gat=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.1114365831.1511800293
+      - name: Origin
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: https://beta.sciencebase.gov
+        example: https://beta.sciencebase.gov
+      - name: Accept-Encoding
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: gzip, deflate, br
+        example: gzip, deflate, br
+      - name: Accept-Language
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: en-US,en;q=0.9
+        example: en-US,en;q=0.9
+      - name: User-Agent
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+        example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+      - name: Content-Type
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: application/json
+        example: application/json
+      - name: Accept
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: application/json, text/javascript, */*; q=0.01
+        example: application/json, text/javascript, */*; q=0.01
+      - name: Referer
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: https://beta.sciencebase.gov/vocab/category/new/editForm?parentId=4f4e475be4b07f02db47de34&nodeType=category&backTo=parent
+        example: https://beta.sciencebase.gov/vocab/category/new/editForm?parentId=4f4e475be4b07f02db47de34&nodeType=category&backTo=parent
+      - name: X-Requested-With
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: XMLHttpRequest
+        example: XMLHttpRequest
+      - name: Connection
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: keep-alive
+        example: keep-alive
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              example:
+                id: ''
+                parentId: 4f4e475be4b07f02db47de34
+                parentItemId: ''
+                name: Test Subfolder
+                label: ''
+                description: ''
+                nodeType: category
+                browseCategory: ''
+                appliesTo: []
+                backTo: parent
+                permissions:
+                  write:
+                    acl: []
+              $ref: '#/components/schemas/~1categoryrequest'
+            example: '{"id":"","parentId":"4f4e475be4b07f02db47de34","parentItemId":"","name":"Test Subfolder","label":"","description":"","nodeType":"category","browseCategory":"","appliesTo":[],"backTo":"parent","permissions":{"write":{"acl":[]}}}'
+        required: true
+      responses:
+        200:
+          description: ''
+      deprecated: false
+      security: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /category/{id}:
+    put:
+      tags:
+      - Category
+      summary: /category
+      description: "Generated from a curl request: \ncurl 'https://beta.sciencebase.gov/vocab/category/5a2319afe4b0b59b7983e729' -X PUT -H 'Cookie: JSESSIONID=F5683F6F664330999D4DD81433961BA0; myusgs.quiet=1; myusgs.recent=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.1114365831.1511800293; _gat=1' -H 'Origin: https://beta.sciencebase.gov' -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: en-US,en;q=0.9' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36' -H 'Content-Type: application/json' -H 'Accept: application/json, text/javascript, */*; q=0.01' -H 'Referer: https://beta.sciencebase.gov/vocab/category/5a2319afe4b0b59b7983e729/editForm' -H 'X-Requested-With: XMLHttpRequest' -H 'Connection: keep-alive' --data-binary '{\\\"id\\\":\\\"5a2319afe4b0b59b7983e729\\\",\\\"parentId\\\":\\\"4f4e475be4b07f02db47de34\\\",\\\"parentItemId\\\":\\\"\\\",\\\"name\\\":\\\"1dirctestzzzz\\\",\\\"label\\\":\\\"\\\",\\\"description\\\":\\\"\\\",\\\"nodeType\\\":\\\"category\\\",\\\"browseCategory\\\":\\\"\\\",\\\"appliesTo\\\":[],\\\"backTo\\\":\\\"\\\",\\\"permissions\\\":{\\\"write\\\":{\\\"acl\\\":[]}},\\\"scheme\\\":\\\"https://beta.sciencebase.gov/vocab/category\\\",\\\"uri\\\":\\\"https://beta.sciencebase.gov/vocab/category/5a2319afe4b0b59b7983e729\\\"}' --compressed"
+      operationId: /category2
+      parameters:
+      - name: 'id'
+        in: path
+        description: ID of the subfolder to be edited
+        required: true
+        schema:
+          type: string
+      - name: Cookie
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: JSESSIONID=F5683F6F664330999D4DD81433961BA0; myusgs.quiet=1; myusgs.recent=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.1114365831.1511800293; _gat=1
+        example: JSESSIONID=F5683F6F664330999D4DD81433961BA0; myusgs.quiet=1; myusgs.recent=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.1114365831.1511800293; _gat=1
+      - name: Origin
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: https://beta.sciencebase.gov
+        example: https://beta.sciencebase.gov
+      - name: Accept-Encoding
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: gzip, deflate, br
+        example: gzip, deflate, br
+      - name: Accept-Language
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: en-US,en;q=0.9
+        example: en-US,en;q=0.9
+      - name: User-Agent
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+        example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+      - name: Content-Type
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: application/json
+        example: application/json
+      - name: Accept
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: application/json, text/javascript, */*; q=0.01
+        example: application/json, text/javascript, */*; q=0.01
+      - name: Referer
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: https://beta.sciencebase.gov/vocab/category/5a2319afe4b0b59b7983e729/editForm
+        example: https://beta.sciencebase.gov/vocab/category/5a2319afe4b0b59b7983e729/editForm
+      - name: X-Requested-With
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: XMLHttpRequest
+        example: XMLHttpRequest
+      - name: Connection
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: keep-alive
+        example: keep-alive
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              example:
+                id: 5a2319afe4b0b59b7983e729
+                parentId: 4f4e475be4b07f02db47de34
+                parentItemId: ''
+                name: 1dirctestzzzz
+                label: ''
+                description: ''
+                nodeType: category
+                browseCategory: ''
+                appliesTo: []
+                backTo: ''
+                permissions:
+                  write:
+                    acl: []
+                scheme: https://beta.sciencebase.gov/vocab/category
+                uri: https://beta.sciencebase.gov/vocab/category/5a2319afe4b0b59b7983e729
+              $ref: '#/components/schemas/~1categoryrequest3'
+            example: '{"id":"5a2319afe4b0b59b7983e729","parentId":"4f4e475be4b07f02db47de34","parentItemId":"","name":"1dirctestzzzz","label":"","description":"","nodeType":"category","browseCategory":"","appliesTo":[],"backTo":"","permissions":{"write":{"acl":[]}},"scheme":"https://beta.sciencebase.gov/vocab/category","uri":"https://beta.sciencebase.gov/vocab/category/5a2319afe4b0b59b7983e729"}'
+        required: true
+      responses:
+        200:
+          description: ''
+      deprecated: false
+      security: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    delete:
+      tags:
+      - Category
+      summary: /category
+      description: "Generated from a curl request: \ncurl 'https://beta.sciencebase.gov/vocab/category/5a2319afe4b0b59b7983e729' -X DELETE -H 'Cookie: JSESSIONID=F5683F6F664330999D4DD81433961BA0; myusgs.quiet=1; myusgs.recent=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.1114365831.1511800293; _gat=1' -H 'Origin: https://beta.sciencebase.gov' -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: en-US,en;q=0.9' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36' -H 'Content-Type: application/json' -H 'Accept: */*' -H 'Referer: https://beta.sciencebase.gov/vocab/category/5a2319afe4b0b59b7983e729/editForm' -H 'X-Requested-With: XMLHttpRequest' -H 'Connection: keep-alive' --compressed  "
+      operationId: /category3
+      parameters:
+      - name: 'id'
+        in: path
+        description: ID of the subfolder to be edited
+        required: true
+        schema:
+          type: string
+      - name: Cookie
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: JSESSIONID=F5683F6F664330999D4DD81433961BA0; myusgs.quiet=1; myusgs.recent=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.1114365831.1511800293; _gat=1
+        example: JSESSIONID=F5683F6F664330999D4DD81433961BA0; myusgs.quiet=1; myusgs.recent=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.1114365831.1511800293; _gat=1
+      - name: Origin
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: https://beta.sciencebase.gov
+        example: https://beta.sciencebase.gov
+      - name: Accept-Encoding
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: gzip, deflate, br
+        example: gzip, deflate, br
+      - name: Accept-Language
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: en-US,en;q=0.9
+        example: en-US,en;q=0.9
+      - name: User-Agent
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+        example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+      - name: Accept
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: '*/*'
+        example: '*/*'
+      - name: Referer
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: https://beta.sciencebase.gov/vocab/category/5a2319afe4b0b59b7983e729/editForm
+        example: https://beta.sciencebase.gov/vocab/category/5a2319afe4b0b59b7983e729/editForm
+      - name: X-Requested-With
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: XMLHttpRequest
+        example: XMLHttpRequest
+      - name: Connection
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: keep-alive
+        example: keep-alive
+      - name: Content-Type
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: application/json
+        example: application/json
+      responses:
+        200:
+          description: ''
+      deprecated: false
+      security: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /vocabulary/528bf1cae4b08d0163e00c01:
+    get:
+      tags:
+      - Vocabulary
+      summary: /vocabulary
+      description: "Generated from a curl request: \ncurl 'https://beta.sciencebase.gov/vocab/vocabulary/528bf1cae4b08d0163e00c01' -H 'Pragma: no-cache' -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: en-US,en;q=0.9' -H 'Upgrade-Insecure-Requests: 1' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8' -H 'Referer: https://beta.sciencebase.gov/vocab/vocabulary/528bf1cae4b08d0163e00c01' -H 'Cookie: JSESSIONID=7352EDA52EABFDFD842526BEA0224870; myusgs.recent=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.537161824.1512353144; _gat=1' -H 'Connection: keep-alive' -H 'Cache-Control: no-cache' --compressed"
+      operationId: /vocabulary
+      parameters:
+      - name: Pragma
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: no-cache
+        example: no-cache
+      - name: Accept-Encoding
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: gzip, deflate, br
+        example: gzip, deflate, br
+      - name: Accept-Language
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: en-US,en;q=0.9
+        example: en-US,en;q=0.9
+      - name: Upgrade-Insecure-Requests
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: 1
+        example: 1
+      - name: User-Agent
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+        example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+      - name: Accept
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+        example: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+      - name: Referer
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: https://beta.sciencebase.gov/vocab/vocabulary/528bf1cae4b08d0163e00c01
+        example: https://beta.sciencebase.gov/vocab/vocabulary/528bf1cae4b08d0163e00c01
+      - name: Cookie
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: JSESSIONID=7352EDA52EABFDFD842526BEA0224870; myusgs.recent=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.537161824.1512353144; _gat=1
+        example: JSESSIONID=7352EDA52EABFDFD842526BEA0224870; myusgs.recent=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.537161824.1512353144; _gat=1
+      - name: Connection
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: keep-alive
+        example: keep-alive
+      - name: Cache-Control
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: no-cache
+        example: no-cache
+      responses:
+        200:
+          description: ''
+      deprecated: false
+      security: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /vocabulary:
+    post:
+      tags:
+      - Vocabulary
+      summary: /vocabulary
+      description: "Generated from a curl request: \ncurl 'https://beta.sciencebase.gov/vocab/vocabulary' -H 'Cookie: JSESSIONID=7352EDA52EABFDFD842526BEA0224870; myusgs.recent=1; _gat=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.537161824.1512353144' -H 'Origin: https://beta.sciencebase.gov' -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: en-US,en;q=0.9' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36' -H 'Content-Type: application/json' -H 'Accept: application/json, text/javascript, */*; q=0.01' -H 'Referer: https://beta.sciencebase.gov/vocab/vocabulary/new/editForm?parentId=596e5e17e4b046188688dc04&nodeType=vocabulary&backTo=parent' -H 'X-Requested-With: XMLHttpRequest' -H 'Connection: keep-alive' --data-binary '{\\\"id\\\":\\\"\\\",\\\"parentId\\\":\\\"596e5e17e4b046188688dc04\\\",\\\"name\\\":\\\"dirctestvocabpost\\\",\\\"key\\\":\\\"\\\",\\\"label\\\":\\\"\\\",\\\"description\\\":\\\"\\\",\\\"nodeType\\\":\\\"vocabulary\\\",\\\"termClass\\\":\\\"\\\",\\\"browseCategory\\\":\\\"\\\",\\\"appliesTo\\\":[],\\\"backTo\\\":\\\"parent\\\",\\\"permissions\\\":{\\\"write\\\":{\\\"acl\\\":[]}}}' --compressed"
+      operationId: /vocabulary1
+      parameters:
+      - name: Cookie
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: JSESSIONID=7352EDA52EABFDFD842526BEA0224870; myusgs.recent=1; _gat=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.537161824.1512353144
+        example: JSESSIONID=7352EDA52EABFDFD842526BEA0224870; myusgs.recent=1; _gat=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.537161824.1512353144
+      - name: Origin
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: https://beta.sciencebase.gov
+        example: https://beta.sciencebase.gov
+      - name: Accept-Encoding
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: gzip, deflate, br
+        example: gzip, deflate, br
+      - name: Accept-Language
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: en-US,en;q=0.9
+        example: en-US,en;q=0.9
+      - name: User-Agent
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+        example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+      - name: Content-Type
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: application/json
+        example: application/json
+      - name: Accept
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: application/json, text/javascript, */*; q=0.01
+        example: application/json, text/javascript, */*; q=0.01
+      - name: Referer
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: https://beta.sciencebase.gov/vocab/vocabulary/new/editForm?parentId=596e5e17e4b046188688dc04&nodeType=vocabulary&backTo=parent
+        example: https://beta.sciencebase.gov/vocab/vocabulary/new/editForm?parentId=596e5e17e4b046188688dc04&nodeType=vocabulary&backTo=parent
+      - name: X-Requested-With
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: XMLHttpRequest
+        example: XMLHttpRequest
+      - name: Connection
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: keep-alive
+        example: keep-alive
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              example:
+                id: ''
+                parentId: 596e5e17e4b046188688dc04
+                name: dirctestvocabpost
+                key: ''
+                label: ''
+                description: ''
+                nodeType: vocabulary
+                termClass: ''
+                browseCategory: ''
+                appliesTo: []
+                backTo: parent
+                permissions:
+                  write:
+                    acl: []
+              $ref: '#/components/schemas/~1vocabularyrequest'
+            example: '{"id":"","parentId":"596e5e17e4b046188688dc04","name":"dirctestvocabpost","key":"","label":"","description":"","nodeType":"vocabulary","termClass":"","browseCategory":"","appliesTo":[],"backTo":"parent","permissions":{"write":{"acl":[]}}}'
+        required: true
+      responses:
+        200:
+          description: ''
+      deprecated: false
+      security: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /vocabulary/{id}:
+    put:
+      tags:
+      - Vocabulary
+      summary: /vocabulary
+      description: "Generated from a curl request: \ncurl 'https://beta.sciencebase.gov/vocab/vocabulary/5a24b175e4b0b59b7983e72c' -X PUT -H 'Cookie: JSESSIONID=7352EDA52EABFDFD842526BEA0224870; myusgs.recent=1; _gat=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.537161824.1512353144' -H 'Origin: https://beta.sciencebase.gov' -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: en-US,en;q=0.9' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36' -H 'Content-Type: application/json' -H 'Accept: application/json, text/javascript, */*; q=0.01' -H 'Referer: https://beta.sciencebase.gov/vocab/vocabulary/5a24b175e4b0b59b7983e72c/editForm' -H 'X-Requested-With: XMLHttpRequest' -H 'Connection: keep-alive' --data-binary '{\\\"id\\\":\\\"5a24b175e4b0b59b7983e72c\\\",\\\"parentId\\\":\\\"596e5e17e4b046188688dc04\\\",\\\"name\\\":\\\"dirctestvocabpost2\\\",\\\"key\\\":\\\"\\\",\\\"label\\\":\\\"\\\",\\\"description\\\":\\\"\\\",\\\"nodeType\\\":\\\"vocabulary\\\",\\\"termClass\\\":\\\"\\\",\\\"browseCategory\\\":\\\"\\\",\\\"appliesTo\\\":[],\\\"backTo\\\":\\\"\\\",\\\"permissions\\\":{\\\"write\\\":{\\\"acl\\\":[]}},\\\"scheme\\\":\\\"https://beta.sciencebase.gov/vocab/category/test\\\",\\\"uri\\\":\\\"https://beta.sciencebase.gov/vocab/category/5a24b175e4b0b59b7983e72c\\\",\\\"termScheme\\\":\\\"https://beta.sciencebase.gov/vocab/category/test/dirctestvocabpost\\\",\\\"termsUri\\\":\\\"https://beta.sciencebase.gov/vocab/5a24b175e4b0b59b7983e72c/terms\\\"}' --compressed"
+      operationId: /vocabulary2
+      parameters:
+      - name: 'id'
+        in: path
+        description: ID of the subfolder to be edited
+        required: true
+        schema:
+          type: string
+      - name: Cookie
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: JSESSIONID=7352EDA52EABFDFD842526BEA0224870; myusgs.recent=1; _gat=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.537161824.1512353144
+        example: JSESSIONID=7352EDA52EABFDFD842526BEA0224870; myusgs.recent=1; _gat=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.537161824.1512353144
+      - name: Origin
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: https://beta.sciencebase.gov
+        example: https://beta.sciencebase.gov
+      - name: Accept-Encoding
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: gzip, deflate, br
+        example: gzip, deflate, br
+      - name: Accept-Language
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: en-US,en;q=0.9
+        example: en-US,en;q=0.9
+      - name: User-Agent
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+        example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+      - name: Content-Type
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: application/json
+        example: application/json
+      - name: Accept
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: application/json, text/javascript, */*; q=0.01
+        example: application/json, text/javascript, */*; q=0.01
+      - name: Referer
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: https://beta.sciencebase.gov/vocab/vocabulary/5a24b175e4b0b59b7983e72c/editForm
+        example: https://beta.sciencebase.gov/vocab/vocabulary/5a24b175e4b0b59b7983e72c/editForm
+      - name: X-Requested-With
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: XMLHttpRequest
+        example: XMLHttpRequest
+      - name: Connection
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: keep-alive
+        example: keep-alive
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              example:
+                id: 5a24b175e4b0b59b7983e72c
+                parentId: 596e5e17e4b046188688dc04
+                name: dirctestvocabpost2
+                key: ''
+                label: ''
+                description: ''
+                nodeType: vocabulary
+                termClass: ''
+                browseCategory: ''
+                appliesTo: []
+                backTo: ''
+                permissions:
+                  write:
+                    acl: []
+                scheme: https://beta.sciencebase.gov/vocab/category/test
+                uri: https://beta.sciencebase.gov/vocab/category/5a24b175e4b0b59b7983e72c
+                termScheme: https://beta.sciencebase.gov/vocab/category/test/dirctestvocabpost
+                termsUri: https://beta.sciencebase.gov/vocab/5a24b175e4b0b59b7983e72c/terms
+              $ref: '#/components/schemas/~1vocabularyrequest9'
+            example: '{"id":"5a24b175e4b0b59b7983e72c","parentId":"596e5e17e4b046188688dc04","name":"dirctestvocabpost2","key":"","label":"","description":"","nodeType":"vocabulary","termClass":"","browseCategory":"","appliesTo":[],"backTo":"","permissions":{"write":{"acl":[]}},"scheme":"https://beta.sciencebase.gov/vocab/category/test","uri":"https://beta.sciencebase.gov/vocab/category/5a24b175e4b0b59b7983e72c","termScheme":"https://beta.sciencebase.gov/vocab/category/test/dirctestvocabpost","termsUri":"https://beta.sciencebase.gov/vocab/5a24b175e4b0b59b7983e72c/terms"}'
+        required: true
+      responses:
+        200:
+          description: ''
+      deprecated: false
+      security: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    delete:
+      tags:
+      - Vocabulary
+      summary: /vocabulary
+      description: "Generated from a curl request: \ncurl 'https://beta.sciencebase.gov/vocab/vocabulary/5a24b175e4b0b59b7983e72c' -X DELETE -H 'Cookie: JSESSIONID=7352EDA52EABFDFD842526BEA0224870; myusgs.recent=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.537161824.1512353144; _gat=1' -H 'Origin: https://beta.sciencebase.gov' -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: en-US,en;q=0.9' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36' -H 'Content-Type: application/json' -H 'Accept: */*' -H 'Referer: https://beta.sciencebase.gov/vocab/vocabulary/5a24b175e4b0b59b7983e72c/editForm' -H 'X-Requested-With: XMLHttpRequest' -H 'Connection: keep-alive' --compressed"
+      operationId: /vocabulary3
+      parameters:
+      - name: 'id'
+        in: path
+        description: ID of the subfolder to be edited
+        required: true
+        schema:
+          type: string
+      - name: Cookie
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: JSESSIONID=7352EDA52EABFDFD842526BEA0224870; myusgs.recent=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.537161824.1512353144; _gat=1
+        example: JSESSIONID=7352EDA52EABFDFD842526BEA0224870; myusgs.recent=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.537161824.1512353144; _gat=1
+      - name: Origin
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: https://beta.sciencebase.gov
+        example: https://beta.sciencebase.gov
+      - name: Accept-Encoding
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: gzip, deflate, br
+        example: gzip, deflate, br
+      - name: Accept-Language
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: en-US,en;q=0.9
+        example: en-US,en;q=0.9
+      - name: User-Agent
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+        example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+      - name: Content-Type
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: application/json
+        example: application/json
+      - name: Accept
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: '*/*'
+        example: '*/*'
+      - name: Referer
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: https://beta.sciencebase.gov/vocab/vocabulary/5a24b175e4b0b59b7983e72c/editForm
+        example: https://beta.sciencebase.gov/vocab/vocabulary/5a24b175e4b0b59b7983e72c/editForm
+      - name: X-Requested-With
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: XMLHttpRequest
+        example: XMLHttpRequest
+      - name: Connection
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: keep-alive
+        example: keep-alive
+      responses:
+        200:
+          description: ''
+      deprecated: false
+      security: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /term/598b31efe4b0a8a2c35686c4:
+    get:
+      tags:
+      - Term
+      summary: /term
+      description: "Generated from a curl request: \ncurl 'https://beta.sciencebase.gov/vocab/term/598b31efe4b0a8a2c35686c4' -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: en-US,en;q=0.9' -H 'Upgrade-Insecure-Requests: 1' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8' -H 'Referer: https://beta.sciencebase.gov/vocab/vocabulary/596e5ec5e4b046188688dc05' -H 'Cookie: JSESSIONID=7352EDA52EABFDFD842526BEA0224870; myusgs.recent=1; _gat=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.537161824.1512353144' -H 'Connection: keep-alive' -H 'Cache-Control: max-age=0' --compressed"
+      operationId: /term
+      parameters:
+      - name: Accept-Encoding
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: gzip, deflate, br
+        example: gzip, deflate, br
+      - name: Accept-Language
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: en-US,en;q=0.9
+        example: en-US,en;q=0.9
+      - name: Upgrade-Insecure-Requests
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: 1
+        example: 1
+      - name: User-Agent
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+        example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+      - name: Accept
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+        example: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+      - name: Referer
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: https://beta.sciencebase.gov/vocab/vocabulary/596e5ec5e4b046188688dc05
+        example: https://beta.sciencebase.gov/vocab/vocabulary/596e5ec5e4b046188688dc05
+      - name: Cookie
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: JSESSIONID=7352EDA52EABFDFD842526BEA0224870; myusgs.recent=1; _gat=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.537161824.1512353144
+        example: JSESSIONID=7352EDA52EABFDFD842526BEA0224870; myusgs.recent=1; _gat=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.537161824.1512353144
+      - name: Connection
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: keep-alive
+        example: keep-alive
+      - name: Cache-Control
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: max-age=0
+        example: max-age=0
+      responses:
+        200:
+          description: ''
+      deprecated: false
+      security: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /term:
+    post:
+      tags:
+      - Term
+      summary: /term
+      description: "Generated from a curl request: \ncurl 'https://beta.sciencebase.gov/vocab/term' -H 'Cookie: JSESSIONID=7352EDA52EABFDFD842526BEA0224870; myusgs.recent=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.537161824.1512353144' -H 'Origin: https://beta.sciencebase.gov' -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: en-US,en;q=0.9' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36' -H 'Content-Type: application/json' -H 'Accept: application/json, text/javascript, */*; q=0.01' -H 'Referer: https://beta.sciencebase.gov/vocab/term/new/editForm?parentId=5a24b544e4b0b59b7983e72d&nodeType=term&backTo=parent' -H 'X-Requested-With: XMLHttpRequest' -H 'Connection: keep-alive' --data-binary '{\\\"id\\\":\\\"\\\",\\\"parentId\\\":\\\"5a24b544e4b0b59b7983e72d\\\",\\\"name\\\":\\\"testTerm\\\",\\\"label\\\":\\\"\\\",\\\"description\\\":\\\"\\\",\\\"nodeType\\\":\\\"term\\\",\\\"appliesTo\\\":[],\\\"backTo\\\":\\\"parent\\\",\\\"extensions\\\":{\\\"webLinkType\\\":null,\\\"itemLinkType\\\":null,\\\"linkRelationType\\\":null}}' --compressed"
+      operationId: /term1
+      parameters:
+      - name: Cookie
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: JSESSIONID=7352EDA52EABFDFD842526BEA0224870; myusgs.recent=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.537161824.1512353144
+        example: JSESSIONID=7352EDA52EABFDFD842526BEA0224870; myusgs.recent=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.537161824.1512353144
+      - name: Origin
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: https://beta.sciencebase.gov
+        example: https://beta.sciencebase.gov
+      - name: Accept-Encoding
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: gzip, deflate, br
+        example: gzip, deflate, br
+      - name: Accept-Language
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: en-US,en;q=0.9
+        example: en-US,en;q=0.9
+      - name: User-Agent
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+        example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+      - name: Content-Type
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: application/json
+        example: application/json
+      - name: Accept
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: application/json, text/javascript, */*; q=0.01
+        example: application/json, text/javascript, */*; q=0.01
+      - name: Referer
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: https://beta.sciencebase.gov/vocab/term/new/editForm?parentId=5a24b544e4b0b59b7983e72d&nodeType=term&backTo=parent
+        example: https://beta.sciencebase.gov/vocab/term/new/editForm?parentId=5a24b544e4b0b59b7983e72d&nodeType=term&backTo=parent
+      - name: X-Requested-With
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: XMLHttpRequest
+        example: XMLHttpRequest
+      - name: Connection
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: keep-alive
+        example: keep-alive
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/~1termrequest'
+        required: true
+      responses:
+        200:
+          description: ''
+      deprecated: false
+      security: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /term/{id}:
+    put:
+      tags:
+      - Term
+      summary: /term
+      description: "Generated from a curl request: \ncurl 'https://beta.sciencebase.gov/vocab/term/5a24b5e9e4b0b59b7983e72e' -X PUT -H 'Cookie: JSESSIONID=7352EDA52EABFDFD842526BEA0224870; myusgs.recent=1; _gat=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.537161824.1512353144' -H 'Origin: https://beta.sciencebase.gov' -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: en-US,en;q=0.9' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36' -H 'Content-Type: application/json' -H 'Accept: application/json, text/javascript, */*; q=0.01' -H 'Referer: https://beta.sciencebase.gov/vocab/term/5a24b5e9e4b0b59b7983e72e/editForm' -H 'X-Requested-With: XMLHttpRequest' -H 'Connection: keep-alive' --data-binary '{\\\"id\\\":\\\"5a24b5e9e4b0b59b7983e72e\\\",\\\"parentId\\\":\\\"5a24b544e4b0b59b7983e72d\\\",\\\"name\\\":\\\"1testTerm\\\",\\\"label\\\":\\\"\\\",\\\"description\\\":\\\"\\\",\\\"nodeType\\\":\\\"term\\\",\\\"appliesTo\\\":[],\\\"backTo\\\":\\\"\\\",\\\"extensions\\\":{\\\"webLinkType\\\":null,\\\"itemLinkType\\\":null,\\\"linkRelationType\\\":null},\\\"scheme\\\":\\\"https://beta.sciencebase.gov/vocab/category/test/testvocab\\\",\\\"uri\\\":\\\"https://beta.sciencebase.gov/vocab/category/5a24b5e9e4b0b59b7983e72e\\\"}' --compressed"
+      operationId: /term2
+      parameters:
+      - name: 'id'
+        in: path
+        description: ID of the subfolder to be edited
+        required: true
+        schema:
+          type: string
+      - name: Cookie
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: JSESSIONID=7352EDA52EABFDFD842526BEA0224870; myusgs.recent=1; _gat=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.537161824.1512353144
+        example: JSESSIONID=7352EDA52EABFDFD842526BEA0224870; myusgs.recent=1; _gat=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.537161824.1512353144
+      - name: Origin
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: https://beta.sciencebase.gov
+        example: https://beta.sciencebase.gov
+      - name: Accept-Encoding
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: gzip, deflate, br
+        example: gzip, deflate, br
+      - name: Accept-Language
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: en-US,en;q=0.9
+        example: en-US,en;q=0.9
+      - name: User-Agent
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+        example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+      - name: Content-Type
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: application/json
+        example: application/json
+      - name: Accept
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: application/json, text/javascript, */*; q=0.01
+        example: application/json, text/javascript, */*; q=0.01
+      - name: Referer
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: https://beta.sciencebase.gov/vocab/term/5a24b5e9e4b0b59b7983e72e/editForm
+        example: https://beta.sciencebase.gov/vocab/term/5a24b5e9e4b0b59b7983e72e/editForm
+      - name: X-Requested-With
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: XMLHttpRequest
+        example: XMLHttpRequest
+      - name: Connection
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: keep-alive
+        example: keep-alive
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/~1termrequest14'
+        required: true
+      responses:
+        200:
+          description: ''
+      deprecated: false
+      security: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    delete:
+      tags:
+      - Term
+      summary: /term
+      description: "Generated from a curl request: \ncurl 'https://beta.sciencebase.gov/vocab/term/5a24b5e9e4b0b59b7983e72e' -X DELETE -H 'Cookie: JSESSIONID=7352EDA52EABFDFD842526BEA0224870; myusgs.recent=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.537161824.1512353144; _gat=1' -H 'Origin: https://beta.sciencebase.gov' -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: en-US,en;q=0.9' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36' -H 'Content-Type: application/json' -H 'Accept: */*' -H 'Referer: https://beta.sciencebase.gov/vocab/term/5a24b5e9e4b0b59b7983e72e/editForm' -H 'X-Requested-With: XMLHttpRequest' -H 'Connection: keep-alive' --compressed"
+      operationId: /term3
+      parameters:
+      - name: 'id'
+        in: path
+        description: ID of the subfolder to be edited
+        required: true
+        schema:
+          type: string
+      - name: Cookie
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: JSESSIONID=7352EDA52EABFDFD842526BEA0224870; myusgs.recent=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.537161824.1512353144; _gat=1
+        example: JSESSIONID=7352EDA52EABFDFD842526BEA0224870; myusgs.recent=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.537161824.1512353144; _gat=1
+      - name: Origin
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: https://beta.sciencebase.gov
+        example: https://beta.sciencebase.gov
+      - name: Accept-Encoding
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: gzip, deflate, br
+        example: gzip, deflate, br
+      - name: Accept-Language
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: en-US,en;q=0.9
+        example: en-US,en;q=0.9
+      - name: User-Agent
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+        example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+      - name: Content-Type
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: application/json
+        example: application/json
+      - name: Accept
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: '*/*'
+        example: '*/*'
+      - name: Referer
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: https://beta.sciencebase.gov/vocab/term/5a24b5e9e4b0b59b7983e72e/editForm
+        example: https://beta.sciencebase.gov/vocab/term/5a24b5e9e4b0b59b7983e72e/editForm
+      - name: X-Requested-With
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: XMLHttpRequest
+        example: XMLHttpRequest
+      - name: Connection
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: keep-alive
+        example: keep-alive
+      responses:
+        200:
+          description: ''
+      deprecated: false
+      security: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+components:
+  schemas:
+    /categoryrequest:
+      title: /categoryRequest
+      required:
+      - id
+      - parentId
+      - parentItemId
+      - name
+      - label
+      - description
+      - nodeType
+      - browseCategory
+      - appliesTo
+      - backTo
+      - permissions
+      type: object
+      properties:
+        id:
+          type: string
+        parentId:
+          type: string
+        parentItemId:
+          type: string
+        name:
+          type: string
+        label:
+          type: string
+        description:
+          type: string
+        nodeType:
+          type: string
+        browseCategory:
+          type: string
+        appliesTo:
+          type: array
+          items:
+            type: string
+          description: ''
+        backTo:
+          type: string
+        permissions:
+          $ref: '#/components/schemas/Permissions'
+      example:
+        id: ''
+        parentId: 4f4e475be4b07f02db47de34
+        parentItemId: ''
+        name: Test Subfolder
+        label: ''
+        description: ''
+        nodeType: category
+        browseCategory: ''
+        appliesTo: []
+        backTo: parent
+        permissions:
+          write:
+            acl: []
+    Permissions:
+      title: Permissions
+      required:
+      - write
+      type: object
+      properties:
+        write:
+          $ref: '#/components/schemas/Write'
+    Write:
+      title: Write
+      required:
+      - acl
+      type: object
+      properties:
+        acl:
+          type: array
+          items:
+            type: string
+          description: ''
+    /categoryrequest3:
+      title: /categoryRequest3
+      required:
+      - id
+      - parentId
+      - parentItemId
+      - name
+      - label
+      - description
+      - nodeType
+      - browseCategory
+      - appliesTo
+      - backTo
+      - permissions
+      - scheme
+      - uri
+      type: object
+      properties:
+        id:
+          type: string
+        parentId:
+          type: string
+        parentItemId:
+          type: string
+        name:
+          type: string
+        label:
+          type: string
+        description:
+          type: string
+        nodeType:
+          type: string
+        browseCategory:
+          type: string
+        appliesTo:
+          type: array
+          items:
+            type: string
+          description: ''
+        backTo:
+          type: string
+        permissions:
+          $ref: '#/components/schemas/Permissions'
+        scheme:
+          type: string
+        uri:
+          type: string
+      example:
+        id: 5a2319afe4b0b59b7983e729
+        parentId: 4f4e475be4b07f02db47de34
+        parentItemId: ''
+        name: 1dirctestzzzz
+        label: ''
+        description: ''
+        nodeType: category
+        browseCategory: ''
+        appliesTo: []
+        backTo: ''
+        permissions:
+          write:
+            acl: []
+        scheme: https://beta.sciencebase.gov/vocab/category
+        uri: https://beta.sciencebase.gov/vocab/category/5a2319afe4b0b59b7983e729
+    /vocabularyrequest:
+      title: /vocabularyRequest
+      required:
+      - id
+      - parentId
+      - name
+      - key
+      - label
+      - description
+      - nodeType
+      - termClass
+      - browseCategory
+      - appliesTo
+      - backTo
+      - permissions
+      type: object
+      properties:
+        id:
+          type: string
+        parentId:
+          type: string
+        name:
+          type: string
+        key:
+          type: string
+        label:
+          type: string
+        description:
+          type: string
+        nodeType:
+          type: string
+        termClass:
+          type: string
+        browseCategory:
+          type: string
+        appliesTo:
+          type: array
+          items:
+            type: string
+          description: ''
+        backTo:
+          type: string
+        permissions:
+          $ref: '#/components/schemas/Permissions'
+      example:
+        id: ''
+        parentId: 596e5e17e4b046188688dc04
+        name: dirctestvocabpost
+        key: ''
+        label: ''
+        description: ''
+        nodeType: vocabulary
+        termClass: ''
+        browseCategory: ''
+        appliesTo: []
+        backTo: parent
+        permissions:
+          write:
+            acl: []
+    /vocabularyrequest9:
+      title: /vocabularyRequest9
+      required:
+      - id
+      - parentId
+      - name
+      - key
+      - label
+      - description
+      - nodeType
+      - termClass
+      - browseCategory
+      - appliesTo
+      - backTo
+      - permissions
+      - scheme
+      - uri
+      - termScheme
+      - termsUri
+      type: object
+      properties:
+        id:
+          type: string
+        parentId:
+          type: string
+        name:
+          type: string
+        key:
+          type: string
+        label:
+          type: string
+        description:
+          type: string
+        nodeType:
+          type: string
+        termClass:
+          type: string
+        browseCategory:
+          type: string
+        appliesTo:
+          type: array
+          items:
+            type: string
+          description: ''
+        backTo:
+          type: string
+        permissions:
+          $ref: '#/components/schemas/Permissions'
+        scheme:
+          type: string
+        uri:
+          type: string
+        termScheme:
+          type: string
+        termsUri:
+          type: string
+      example:
+        id: 5a24b175e4b0b59b7983e72c
+        parentId: 596e5e17e4b046188688dc04
+        name: dirctestvocabpost2
+        key: ''
+        label: ''
+        description: ''
+        nodeType: vocabulary
+        termClass: ''
+        browseCategory: ''
+        appliesTo: []
+        backTo: ''
+        permissions:
+          write:
+            acl: []
+        scheme: https://beta.sciencebase.gov/vocab/category/test
+        uri: https://beta.sciencebase.gov/vocab/category/5a24b175e4b0b59b7983e72c
+        termScheme: https://beta.sciencebase.gov/vocab/category/test/dirctestvocabpost
+        termsUri: https://beta.sciencebase.gov/vocab/5a24b175e4b0b59b7983e72c/terms
+    /termrequest:
+      title: /termRequest
+      required:
+      - id
+      - parentId
+      - name
+      - label
+      - description
+      - nodeType
+      - appliesTo
+      - backTo
+      - extensions
+      type: object
+      properties:
+        id:
+          type: string
+        parentId:
+          type: string
+        name:
+          type: string
+        label:
+          type: string
+        description:
+          type: string
+        nodeType:
+          type: string
+        appliesTo:
+          type: array
+          items:
+            type: string
+          description: ''
+        backTo:
+          type: string
+        extensions:
+          $ref: '#/components/schemas/Extensions'
+    Extensions:
+      title: Extensions
+      required:
+      - webLinkType
+      - itemLinkType
+      - linkRelationType
+      type: object
+      properties:
+        webLinkType:
+          type: string
+        itemLinkType:
+          type: string
+        linkRelationType:
+          type: string
+    /termrequest14:
+      title: /termRequest14
+      required:
+      - id
+      - parentId
+      - name
+      - label
+      - description
+      - nodeType
+      - appliesTo
+      - backTo
+      - extensions
+      - scheme
+      - uri
+      type: object
+      properties:
+        id:
+          type: string
+        parentId:
+          type: string
+        name:
+          type: string
+        label:
+          type: string
+        description:
+          type: string
+        nodeType:
+          type: string
+        appliesTo:
+          type: array
+          items:
+            type: string
+          description: ''
+        backTo:
+          type: string
+        extensions:
+          $ref: '#/components/schemas/Extensions'
+        scheme:
+          type: string
+        uri:
+          type: string
