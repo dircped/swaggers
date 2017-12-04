@@ -1,0 +1,217 @@
+openapi: 3.0.0
+info:
+  title: ScienceBase Vocab API
+  description: Capabilities of the ScienceBase Vocab API
+  version: '1.0'
+servers:
+- url: https://beta.sciencebase.gov/vocab
+  variables: {}
+paths:
+  /vocabulary:
+    post:
+      tags:
+      - Category
+      summary: Create a subfolder
+      description: JSON object body
+      operationId: createSubfolder
+      parameters:
+      - name: Cookie
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+        example: JSESSIONID=F2CFA897F2F9B4F1FFE9430351B1183C; myusgs.recent=1; _gat=1; _ga=GA1.2.531870748.1511800293; _gid=GA1.2.1114365831.1511800293
+      - name: Origin
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+        example: https://beta.sciencebase.gov
+      - name: Accept-Encoding
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+        example: gzip, deflate, br
+      - name: Accept-Language
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+        example: en-US,en;q=0.9
+      - name: User-Agent
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+        example: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+      - name: Content-Type
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+        example: application/json
+      - name: Accept
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+        example: application/json, text/javascript, */*; q=0.01
+      - name: Referer
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+        example: https://beta.sciencebase.gov/vocab/category/new/editForm?parentId=4f4e475be4b07f02db47de34&nodeType=category&backTo=parent
+      - name: X-Requested-With
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: XMLHttpRequest
+        example: XMLHttpRequest
+      - name: Connection
+        in: header
+        description: ''
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          example: keep-alive
+        example: keep-alive
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              example:
+                id: ''
+                parentId: 4f4e475be4b07f02db47de34
+                parentItemId: ''
+                name: zabcj
+                label: ''
+                description: ''
+                nodeType: category
+                browseCategory: ''
+                appliesTo: []
+                backTo: parent
+                permissions:
+                  write:
+                    acl: []
+              $ref: '#/components/schemas/categoryrequest'
+            example: '{"id":"","parentId":"4f4e475be4b07f02db47de34","parentItemId":"","name":"zabcj","label":"","description":"","nodeType":"category","browseCategory":"","appliesTo":[],"backTo":"parent","permissions":{"write":{"acl":[]}}}'
+        required: true
+      responses:
+        200:
+          description: ''
+      deprecated: false
+      security: []
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+components:
+  schemas:
+    categoryrequest:
+      title: categoryRequest
+      required:
+      - id
+      - parentId
+      - parentItemId
+      - name
+      - label
+      - description
+      - nodeType
+      - browseCategory
+      - appliesTo
+      - backTo
+      - permissions
+      type: object
+      properties:
+        id:
+          type: string
+        parentId:
+          type: string
+        parentItemId:
+          type: string
+        name:
+          type: string
+        label:
+          type: string
+        description:
+          type: string
+        nodeType:
+          type: string
+        browseCategory:
+          type: string
+        appliesTo:
+          type: array
+          items:
+            type: string
+          description: ''
+        backTo:
+          type: string
+        permissions:
+          $ref: '#/components/schemas/Permissions'
+      example:
+        id: ''
+        parentId: 4f4e475be4b07f02db47de34
+        parentItemId: ''
+        name: ''
+        label: ''
+        description: ''
+        nodeType: category
+        browseCategory: ''
+        appliesTo: []
+        backTo: parent
+        permissions:
+          write:
+            acl: []
+    Permissions:
+      title: Permissions
+      required:
+      - write
+      type: object
+      properties:
+        write:
+          $ref: '#/components/schemas/Write'
+    Write:
+      title: Write
+      required:
+      - acl
+      type: object
+      properties:
+        acl:
+          type: array
+          items:
+            type: string
+          description: ''
