@@ -9,9 +9,7 @@ paths:
   /categories:
     get:
       summary: All categories
-      description: >-
-        The categories endpoint, returns all terms by term, vocabulary, and
-        category.
+      description: The categories endpoint, returns all terms by term, vocabulary, and category.
       parameters:
         - name: q
           in: query
